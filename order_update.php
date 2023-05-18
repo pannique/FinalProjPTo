@@ -21,8 +21,8 @@
 <?php
 } else {
 	$order_lot = $_POST["order_lot"];
-    $order_latest_status = $_POST["status"];
-    $order_tracking = $_POST["order_tracking"];
+    	$order_latest_status = $_POST["status"];
+    	$order_tracking = $_POST["order_tracking"];
 	$link = mysqli_connect("localhost", "root", "", "goodstracking");
 	$sql = "UPDATE orders SET order_latest_status = '$order_latest_status', latest_status_date = DATE(NOW()), order_tracking= '$order_tracking'
 			WHERE order_lot = '$order_lot' ";
