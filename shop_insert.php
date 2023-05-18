@@ -30,7 +30,8 @@ else {
     $seller_phoneno = $_POST["phoneno"];
 	$link = mysqli_connect("localhost", "root", "", "goodstracking");
 	$sql = "INSERT INTO shops 
-			VALUES('$shopID', '$shopname', '$seller_name', '$seller_surname', '$seller_idnumber', '@$shop_username', '$shop_password', '$shop_email', '$seller_phoneno');";
+			VALUES('$shopID', '$shopname', '$seller_name', '$seller_surname', '$seller_idnumber',
+			'@$shop_username', '$shop_password', '$shop_email', '$seller_phoneno');";
 	$result = mysqli_query($link, $sql);
 	if ($result)
 	{	echo "การเพิ่มข้อมูลลงในฐานข้อมูลประสบความสำเร็จ<br>";
