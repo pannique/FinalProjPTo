@@ -4,9 +4,9 @@ if(empty($_POST["submit"])) {
 <form action="shop_insert.php" method="POST">
 Sign Up<p>
    	Shop ID <input type="text" name="shopID"><p>
-    Username <input type="text" name="username"><p>
+    	Username <input type="text" name="username"><p>
 	Password <input type="text" name="password"><p>
-    Email <input type="text" name="email"><p>
+    	Email <input type="text" name="email"><p>
 	Shop Name <input type="text" name="shop_name"><p>
   	Seller Name <input type="text" name="seller_name"><p>
 	Seller Surname <input type="text" name="seller_surname"><p>
@@ -24,10 +24,10 @@ else {
 	$seller_name = $_POST["seller_name"];
 	$seller_surname = $_POST["seller_surname"];
 	$seller_idnumber = $_POST["seller_idno"];
-    $shop_username = $_POST["username"];
-    $shop_password = $_POST["password"];
-    $shop_email = $_POST["email"];
-    $seller_phoneno = $_POST["phoneno"];
+    	$shop_username = $_POST["username"];
+    	$shop_password = $_POST["password"];
+    	$shop_email = $_POST["email"];
+    	$seller_phoneno = $_POST["phoneno"];
 	$link = mysqli_connect("localhost", "root", "", "goodstracking");
 	$sql = "INSERT INTO shops 
 			VALUES('$shopID', '$shopname', '$seller_name', '$seller_surname', '$seller_idnumber',
